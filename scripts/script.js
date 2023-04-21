@@ -1,4 +1,2 @@
-const lastModifiedSpan = document.getElementById("last-modified");
-const file = new File([""], "index.html");
-const lastModified = new Date(file.lastModified).toLocaleString();
-lastModifiedSpan.textContent = "Last modified: " + lastModified;
+let text = document.lastModified;
+document.getElementById("last-modified").innerHTML = text;
