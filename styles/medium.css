@@ -1,0 +1,7 @@
+@media screen and (min-width: 32.5em) {
+    .flex-container {
+        display: flex;
+        
+    }
+
+}
