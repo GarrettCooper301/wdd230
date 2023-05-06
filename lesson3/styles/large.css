@@ -1,0 +1,5 @@
+@media (min-width: 42em) {
+	nav {
+		flex-direction: row;
+	}
+}
