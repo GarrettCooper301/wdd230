@@ -1,1 +1,71 @@
-1420 px
+@media screen and (max-width: 1200px) {
+   /* nav {
+      display: none;
+    }
+  
+    #hamburgerButton {
+      display: block;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  */
+
+    #left-side h1 {
+        font-size: 36px;
+
+    }
+    nav {
+        display: none;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    #hero {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+
+    #event {
+        grid-column: 1 / 3 ;
+        grid-row: 9 / 11;
+    }
+
+    #weather {
+        grid-column: 3;
+        grid-row: 9 / 11;
+    }
+
+    #news {
+        grid-column: 1 / 4;
+        grid-row: 3 / 5;
+    }
+
+    #join {
+        grid-column: 1 / 4;
+        grid-row: 7 / 9;
+    }
+
+    #spotlights {
+        grid-column: 1 / 4;
+        grid-row: 5 / 7;
+        align-items: center;
+    }
+
+    footer .top-footer img {
+        width: 125px;
+    }
+
+    footer .top-footer {
+        font-size: 24px;
+    }
+
+}

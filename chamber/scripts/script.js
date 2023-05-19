@@ -11,4 +11,9 @@ document.getElementById("last-modified").innerHTML = text;
 
  datefield.textContent = fulldate; 
 
-
+ //const hamburgerButton = document.getElementById("hamburgerButton");
+ //const nav = document.querySelector("nav");
+ 
+ //hamburgerButton.addEventListener("click", () => {
+   //nav.classList.toggle("show-menu");
+ //});

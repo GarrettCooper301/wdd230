@@ -1,1 +1,60 @@
-391 px
+@media screen and (max-width: 680px) {
+
+    #left-side h1 {
+        font-size: 32px;
+
+    }
+
+    #right-side .social img {
+        width: 40px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(300px, auto);
+    }
+
+    #hero {       
+        grid-row: 1;
+    }
+    
+    #event {
+        width: 100%;
+        grid-row: 2;
+    }
+    
+    #weather {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+    }
+    
+    #news {
+        grid-row: 4;
+    }
+    
+    #join {
+        grid-row: 5;
+    }
+    
+    #spotlights {
+        grid-row: 6;
+        align-items: center;
+    }
+    
+    footer .top-footer {
+        display: block;
+        align-items: center;
+        line-height: normal;
+        font-size: 30px;
+    }
+
+    footer .top-footer img {
+        width: 225px;
+        padding-left: 25px;
+    }
+
+
+}
