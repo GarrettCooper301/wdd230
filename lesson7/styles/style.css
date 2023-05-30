@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    min-width: 150px;
+    max-width: 300px;
+    background-color: grey;
+}
+
+img[data-src] {
+    filter: blur(3px);
+    
+}
+
+img {
+    margin-top: 20px;
+    filter: blur(0px);
+    transition: filter 0.5s;
+}
