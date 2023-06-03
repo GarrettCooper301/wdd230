@@ -28,3 +28,4 @@ document.getElementById("last-modified").innerHTML = text;
         banner.style.display = 'block';
     }
 });
+

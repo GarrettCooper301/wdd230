@@ -230,6 +230,38 @@ ul li {
     height: fit-content;
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+    background-color: rgb(182, 182, 182);
+    
+}
+
+.gallery img {
+    filter: blur(20px);
+    transition: filter 0.5s ease;
+    padding-top: 20px;
+    
+}
+
+.gallery img.loaded {
+    filter: blur(0);
+}
+  
+.demograph {
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: rgb(182, 182, 182);
+}
+
 footer {
     background-color: rgb(0, 10, 54);
     color: white;

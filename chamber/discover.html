@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>St. George Chamber of Commerce</title>
+        <title>St. George Chamber of Commerce Discovery</title>
         <meta name="description" content="St. George Chamber of Commerce for Garrett Cooper Brigham Young University - Idaho">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
@@ -30,7 +30,7 @@
             <section id="middle">
               <nav>
                   <div>
-                    <a href="./discover.html"> Discover</a>
+                    <a href="./index.html"> Discover</a>
                   </div>
                   <div>
                     <a href="./index.html"> Directory</a>
@@ -68,76 +68,42 @@
           </div>
         
         </header>
-
-          <div class="wrapper">
-
-            <section id="hero">
-              <div class="hero-img">
-                <h1>Welcome to St. George</h1>
-                <button>Join the Chamber</button>
-              </div>
-            </section>
-
-            <section id="event">3rd Annual St. George Pickleball Tournament
-              <div class="event-content">
-                <p>
-                  Join us for our 3rd annual St. George Pickleball 
-                  Tournament next Saturday starting at 12:00 PM. <a href="#">more info...</a>
-                </p>
-              </div>
-            </section>
-
-            <section id="weather">Weather
-              <div class="weather-content">
-                <img src="./images/weather-icon.png" alt="Weather Image"/>
-                <p>Partly Cloudy</p>
-                <p>Temperature: 90 Degrees</p>
-              </div>
-            </section>
-
-            <section id="news">News Release
-              <div class="news-content">
-                <p> 
-                  In an unprecedented turn of events, an extraordinary 
-                  scientific breakthrough has sent shockwaves through
-                  the academic and research communities of St. George, Utah. 
-                  A team of local researchers, funded by a private organization, 
-                  has announced the discovery of a revolutionary 
-                  technology that promises to reshape the way we understand the world. 
-                </p>
-              </div>
-            </section>
-
-            <section id="join">
-              <div class="join-content">
-                <button>Join Us!</button>
-                <p>
-                  Discover how to join the St. George Chamber of Commerce
-                  and how it will benefit your organization!
-                </p> 
-              </div>
-            </section>
-
-            <section id="spotlights">
-              <section>St. George Credit Union
-                <div class="spot1-content">
-                  <img src="./images/bank.png" alt="Bank Image"/>
-                  <p>"Building Stronger Financial Futures Together"</p>
-                  <p>money@stgcu.com</p>
-                  <p>+(111)111-1111</p>
+        <main>
+            <h1 class="discovertitle">Discover St. George</h1>
+            <div class="gallery-grid">
+                <picture class="gallery">
+                    <img src="./images/golf.jpg" data-src="./images/golf.jpg" alt="golf">
+                    <p>Visit the beautiful Dixie Red Hills 9 hole golf course.</p>
+                </picture>
+                <picture class="gallery">
+                    <img src="./images/dixierock.jpg" data-src="./images/dixierock.jpg" alt="dixierock">
+                    <p>Go on a short hike to see a wonderful view of St. George at Dixie Rock.</p>
+                </picture>
+                <picture class="gallery">
+                    <img src="./images/temple.jpg" data-src="./images/temple.jpg" alt="temple">
+                    <p>The first ever Utah temple was built here in St. George.</p>
+                </picture>
+                <picture class="gallery">
+                    <img src="./images/utahtech.jpg" data-src="./images/utahtech.jpg" alt="utahtech">
+                    <p>Walk through the newly renamed Utah Tech University and enjoy the sports!</p>
+                </picture>
+                <picture class="gallery">
+                    <img src="./images/historicdowntown.jpg" data-src="./images/historicdowntown.jpg" alt="historicdowntown">
+                    <p>Historical Downtown St. George has many attractions and history about St. George.</p>
+                </picture>
+                <div class="demograph">
+                    <h2>About St. George</h2>
+                    <h3>We are one of the fastest growing cities in the nation!</h3>
+                    <p>Population as of July 1, 2022: 102,519</p>
+                    <p>House-holds from 2017-2021: 32,753</p>
+                    <p>Veterans from 2017-2021: 5,258</p>
                 </div>
-              </section>
-              <section>Intergalactic
-                <div class="spot2-content">
-                  <img src="./images/rocket.png" alt="Rocket Image"/>
-                  <p>"Unleashing Boundless Horizons"</p>
-                  <p>contact@intergalactic.com</p>
-                  <p>+(888)888-8888</p>
-                </div>
-              </section>
-            </section>
-
-          </div>
+            </div>
+            <div class="last-visit">
+                <p>Number of days since last visit: <span id="visits"></span> days</p>
+            </div>
+        </main>
+         
     <footer>
         <div class="top-footer">
           <img class="footer-logo" src="./images/StGCC.png" alt="STGCC Logo">
@@ -149,5 +115,7 @@
         <p>Last Modified:</p><span id="last-modified"></span>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/lazy.js"></script>
+    <script src="scripts/lastvisit.js"></script>
 </body>
 </html>
