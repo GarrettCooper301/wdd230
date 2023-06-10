@@ -27,5 +27,10 @@ document.getElementById("last-modified").innerHTML = text;
         banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
         banner.style.display = 'block';
     }
+  function setFormLoadedDate() {
+    var formLoadedDateField = document.getElementById("form-loaded-date");
+    var currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+    formLoadedDateField.value = currentDate;
+  }
 });
 

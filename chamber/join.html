@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>St. George Chamber of Commerce Discovery</title>
+        <title>St. George Chamber of Commerce</title>
         <meta name="description" content="St. George Chamber of Commerce for Garrett Cooper Brigham Young University - Idaho">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/base.css">
-        
     </head>
+
     <body>
         <header>
           <div id="banner"></div>
@@ -68,54 +68,53 @@
           </div>
         
         </header>
-        <main>
-            <h1 class="discovertitle">Discover St. George</h1>
-            <div class="gallery-grid">
-                <picture class="gallery">
-                    <img src="./images/golf.jpg" data-src="./images/golf.jpg" alt="golf">
-                    <p>Visit the beautiful Dixie Red Hills 9 hole golf course.</p>
-                </picture>
-                <picture class="gallery">
-                    <img src="./images/dixierock.jpg" data-src="./images/dixierock.jpg" alt="dixierock">
-                    <p>Go on a short hike to see a wonderful view of St. George at Dixie Rock.</p>
-                </picture>
-                <picture class="gallery">
-                    <img src="./images/temple.jpg" data-src="./images/temple.jpg" alt="temple">
-                    <p>The first ever Utah temple was built here in St. George.</p>
-                </picture>
-                <picture class="gallery">
-                    <img src="./images/utahtech.jpg" data-src="./images/utahtech.jpg" alt="utahtech">
-                    <p>Walk through the newly renamed Utah Tech University and enjoy the sports!</p>
-                </picture>
-                <picture class="gallery">
-                    <img src="./images/historicdowntown.jpg" data-src="./images/historicdowntown.jpg" alt="historicdowntown">
-                    <p>Historical Downtown St. George has many attractions and history about St. George.</p>
-                </picture>
-                <div class="demograph">
-                    <h2>About St. George</h2>
-                    <h3>We are one of the fastest growing cities in the nation!</h3>
-                    <p>Population as of July 1, 2022: 102,519</p>
-                    <p>House-holds from 2017-2021: 32,753</p>
-                    <p>Veterans from 2017-2021: 5,258</p>
-                </div>
-            </div>
-            <div class="last-visit">
-                <p>Number of days since last visit: <span id="visits"></span> days</p>
-            </div>
-        </main>
-         
+
+        <h1>Membership Form</h1>
+        <form method="get" action="thankyou.html">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required><br>
+      
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required><br>
+      
+          <label for="position-title">Business Position Title:</label>
+          <input type="text" id="position-title" name="position-title" pattern="[a-zA-Z\s\-]{7,}"><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@example.com"><br>
+      
+          <label for="cell-phone">Cell Phone Number:</label>
+          <input type="tel" id="cell-phone" name="cell-phone" required><br>
+      
+          <label for="business-name">Business Name/Title:</label>
+          <input type="text" id="business-name" name="business-name" required><br>
+      
+          <label for="membership-level">Membership Level:</label>
+          <select id="membership-level" name="membership-level">
+            <option value="NP">NP Membership (No Fee)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select><br>
+      
+          <label for="business-description">Business Description:</label>
+          <textarea id="business-description" name="business-description"></textarea><br>
+      
+          <input type="hidden" name="form-loaded-date" value="<?php echo date('Y-m-d H:i:s'); ?>">
+      
+          <input type="submit" value="Submit">
+        </form>
+
     <footer>
         <div class="top-footer">
-          <img class="footer-logo" src="./images/StGCC.png" alt="STGCC Logo">
-          <p>St. George Chamber of Commerce <br> North 200 East, St. George UT 84790</p>
-          <p>info@stgeorgechamber.com <br> +(435)435-4354 <br> Location Map </p>
+            <img class="footer-logo" src="./images/StGCC.png" alt="STGCC Logo">
+            <p>St. George Chamber of Commerce <br> North 200 East, St. George UT 84790</p>
+            <p>info@stgeorgechamber.com <br> +(435)435-4354 <br> Location Map </p>
         </div>
         <hr>
         <p>&copy; 2023 St. George Chamber | Garrett E. Cooper | WDD 230 Project</p>
         <p>Last Modified:</p><span id="last-modified"></span>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/lazy.js"></script>
-    <script src="scripts/lastvisit.js"></script>
 </body>
 </html>
