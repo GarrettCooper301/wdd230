@@ -1,0 +1,67 @@
+body {
+    background-color: lightgrey;
+}
+section {
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
+    flex-flow: column;
+    text-align: center;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.cards{
+    color: aliceblue;
+}
+
+span {
+    padding: .5rem;
+}
+
+img {
+    box-shadow: 0 0 10px 5px rgb(188, 188, 188);
+    outline: 5px solid rgb(188, 188, 188);
+  }
+
+@media only screen and (min-width: 768px) {
+   .cards {
+        display: grid;
+   
+        grid-template-columns: 1fr 1fr;
+   }
+    
+}
+
+img {
+    width: 85%;
+}
+
+@media only screen and (min-width: 1200px) {
+   .cards {
+       display: grid;
+   
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+   }
+
+   img {
+    width: 85%;
+}
+}
