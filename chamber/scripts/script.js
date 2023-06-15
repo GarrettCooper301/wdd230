@@ -34,7 +34,7 @@ document.getElementById("last-modified").innerHTML = text;
   }
 });
 
-fetch('json/data.json')
+fetch('JSON/data.json')
   .then(response => response.json())
   .then(data => {
     const directoryContainer = document.getElementById('directory-container');
