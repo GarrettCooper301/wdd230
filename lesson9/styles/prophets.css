@@ -4,7 +4,6 @@ body {
 section {
     background-color: rgb(0, 0, 0);
     padding: 2rem;
-    border: 1px solid rgb(0, 0, 0);
     display: block;
     flex-flow: column;
     text-align: center;
@@ -45,8 +44,7 @@ img {
         display: grid;
    
         grid-template-columns: 1fr 1fr;
-   }
-    
+   } 
 }
 
 img {
@@ -63,5 +61,5 @@ img {
 
    img {
     width: 85%;
-}
+    }
 }
