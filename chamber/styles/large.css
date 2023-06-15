@@ -273,9 +273,9 @@ form {
   }
 
 label {
-display: block;
-margin-bottom: 10px;
-font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input[type="text"],
@@ -283,26 +283,64 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-width: auto;
-padding: 10px 20px;
-background-color: yellow;
-color: black;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+    width: auto;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-background-color: rgb(182, 182, 182);
+    background-color: rgb(182, 182, 182);
+}
+
+.business-card {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 5%;
+    margin: 10px;
+    background-color: rgb(182, 182, 182);
+}
+
+.business-card img {
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.business-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.business-card p {
+    margin: 5px 0;
+}
+
+.business-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.business-list li {
+    margin-bottom: 10px;
+}
+
+.business-list li strong {
+    font-weight: bold;
 }
 
 footer {

@@ -1,0 +1,76 @@
+{
+    "businesses": [
+      {
+        "name": "Hallows & Company",
+        "logo": "hallowlogo.jpg",
+        "phone": "(435) 529-3351",
+        "website": "https://hallowscompany.com/",
+        "address": "1173 S 250 W #306, St. George, UT 84770",
+        "membership": "Gold"
+      },
+      {
+        "name": "Intergalactic",
+        "logo": "intergalactic.jpg",
+        "phone": "(435) 359-9300",
+        "website": "https://ig.space/",
+        "address": "3172 Deseret Dr S, St. George, UT 84790",
+        "membership": "Silver"
+      },
+      {
+        "name": "RAM Aviation, Space & Defense",
+        "logo": "ram.jpg",
+        "phone": "(435) 673-4603",
+        "website": "https://ramasd.com/",
+        "address": "3172 Deseret Dr S, St. George, UT 84790",
+        "membership": "Gold"
+      },
+      {
+        "name": "Red Rock Property Management",
+        "logo": "redrock.jpg",
+        "phone": "(435) 703-9946",
+        "website": "https://www.redrockpropertymanagement.com/",
+        "address": "301 N 200 E #1-a, St. George, UT 84770",
+        "membership": "Gold"
+      },
+      {
+        "name": "Vasion",
+        "logo": "vasion.png",
+        "phone": "(435) 652-1288",
+        "website": "https://www.vasion.com/",
+        "address": "432 S Tech Ridge Dr, St. George, UT 84770",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Legacy Moving St. George",
+        "logo": "legacy.png",
+        "phone": "(435) 287-7535",
+        "website": "https://legacymovingstgeorge.com/",
+        "address": "415 S Dixie Dr #9, St. George, UT 84770",
+        "membership": "Gold"
+      },
+      {
+        "name": "Nature's Gate Pest Control",
+        "logo": "naturesgatelogo.jpg",
+        "phone": "(435) 656-0195",
+        "website": "https://naturesgatepest.com/",
+        "address": "162 N 400 E Ste A-100, St. George, UT 84770",
+        "membership": "Silver"
+      },
+      {
+        "name": "Cafe Sabor",
+        "logo": "cafesabor.png",
+        "phone": "(435) 218-7775",
+        "website": "https://www.cafesabor.com/",
+        "address": "2953, 290 UT-34, St. George, UT 84770",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Reid-Ashman Manufacturing Inc",
+        "logo": "reid-ashman.png",
+        "phone": "(435) 986-6000",
+        "website": "https://reidashman.com/",
+        "address": "582 N 3050 E, St. George, UT 84790",
+        "membership": "Silver"
+      }
+    ]
+  }

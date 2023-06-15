@@ -34,3 +34,44 @@ document.getElementById("last-modified").innerHTML = text;
   }
 });
 
+fetch('json/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const directoryContainer = document.getElementById('directory-container');
+    const businesses = data.businesses;
+
+    businesses.forEach(business => {
+      const { name, address, phone, website, logo, membership } = business;
+
+      const card = document.createElement('div');
+      card.classList.add('business-card');
+
+      const logoImg = document.createElement('img');
+      logoImg.src = `images/${logo}`;
+      logoImg.alt = `${name} Logo`;
+
+      const heading = document.createElement('h2');
+      heading.textContent = name;
+
+      const addressPara = document.createElement('p');
+      addressPara.innerHTML = `<strong>Address:</strong> ${address}`;
+
+      const phonePara = document.createElement('p');
+      phonePara.innerHTML = `<strong>Phone:</strong> ${phone}`;
+
+      const websitePara = document.createElement('p');
+      websitePara.innerHTML = `<strong>Website:</strong> <a href="${website}" target="_blank">${website}</a>`;
+
+      const membershipPara = document.createElement('p');
+      membershipPara.innerHTML = `<strong>Membership:</strong> ${membership}`;
+
+      card.appendChild(logoImg);
+      card.appendChild(heading);
+      card.appendChild(addressPara);
+      card.appendChild(phonePara);
+      card.appendChild(websitePara);
+      card.appendChild(membershipPara);
+
+      directoryContainer.appendChild(card);
+    });
+  });
