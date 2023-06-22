@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5861897&q=Fairbanks&units=imperial&appid=fef3472ec1bd82edd28da3682f86f84e";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5861897&q=Fairbanks&units=imperial&appid=fef3472ec1bd82edd28da3682f86f84e";
 fetch(apiURL)
 	.then((response) => response.json())
 	.then((jsObject) => {
