@@ -75,3 +75,4 @@ fetch('JSON/data.json')
       directoryContainer.appendChild(card);
     });
   });
+

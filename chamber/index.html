@@ -87,14 +87,17 @@
               </div>
             </section>
 
-            <section id="weather">Weather
+            <section id="weather">
               <div class="weather-content">
-                <img src="./images/weather-icon.png" alt="Weather Image"/>
-                <p>Partly Cloudy</p>
-                <p>Temperature: 90 Degrees</p>
+                <img src="" alt="Weather Image" id="weather-icon">
+                <p id="current-condition"></p>
+                <p>Temperature: <span id="current-temperature"></span></p>
+                <p>Wind Speed: <span id="wind-speed"></span></p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+                <p>Provided By: <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
               </div>
             </section>
-
+            
             <section id="news">News Release
               <div class="news-content">
                 <p> 
@@ -149,5 +152,6 @@
         <p>Last Modified:</p><span id="last-modified"></span>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
