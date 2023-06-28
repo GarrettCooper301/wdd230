@@ -362,3 +362,16 @@ footer .top-footer {
     font-size: 42px;
 }
 
+  #navigation-links.show-menu {
+    display: block;
+  }
+  
+  #navigation-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(217, 255, 0);
+  }
+
+
+

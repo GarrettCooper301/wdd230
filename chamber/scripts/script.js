@@ -11,13 +11,6 @@ document.getElementById("last-modified").innerHTML = text;
 
  datefield.textContent = fulldate; 
 
- //const hamburgerButton = document.getElementById("hamburgerButton");
- //const nav = document.querySelector("nav");
- 
- //hamburgerButton.addEventListener("click", () => {
-   //nav.classList.toggle("show-menu");
- //});
- 
  window.addEventListener('DOMContentLoaded', function() {
     var today = new Date();
     var dayOfWeek = today.getDay();
@@ -76,3 +69,16 @@ fetch('JSON/data.json')
     });
   });
 
+  window.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menu-toggle');
+    var navigation = document.getElementById('navigation-links');
+  
+    menuToggle.addEventListener('click', function() {
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('show-menu');
+    });
+  });
+  
+  
+  
+  

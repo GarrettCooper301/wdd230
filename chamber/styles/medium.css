@@ -1,27 +1,10 @@
 @media screen and (max-width: 1200px) {
-   /* nav {
-      display: none;
-    }
-  
-    #hamburgerButton {
-      display: block;
-      font-size: 24px;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-  }
-  */
-
+   
     #left-side h1 {
         font-size: 36px;
 
     }
-    nav {
-        display: none;
-    }
-
+    
     .wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -73,5 +56,31 @@
     footer .top-footer {
         font-size: 24px;
     }
-
+    #navigation-links {
+        display: none;
+      }
+      
+      #navigation-links.show-menu {
+        display: block;
+      }
+      
+      #menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      
+      #menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 4px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      #menu-toggle.active .bar {
+        background-color: white;
+      }
+      
+      
 }
