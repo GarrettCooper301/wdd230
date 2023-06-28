@@ -62,5 +62,14 @@
         padding-left: 25px;
     }
 
+    nav a {
+        display: flex;
+        color: rgb(182, 182, 182);
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 15px;
+    
+    }
 
 }
