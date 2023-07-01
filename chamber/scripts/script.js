@@ -70,7 +70,7 @@ fetch('JSON/data.json')
   });
 
 
-// Helper function to get random elements from an array
+
 function getRandomElements(array, min, max) {
   const shuffled = array.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, Math.floor(Math.random() * (max - min + 1)) + min);
@@ -91,18 +91,17 @@ function getRandomElements(array, min, max) {
   document.getElementById('contact-form').addEventListener('submit', submitForm);
 
 function submitForm(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault(); 
 
-  // Get the form values
+  
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
   var message = document.getElementById('message').value;
 
-  // Do something with the form data (e.g., send it to a server)
-  // Here, we're just displaying an alert with the values
+  
   alert('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
 
-  // Reset the form
+  
   document.getElementById('contactForm').reset();
 }
 
