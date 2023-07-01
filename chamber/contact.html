@@ -68,28 +68,55 @@
         
         </header>
 
-        <body>
-            <h2>
-                Buisness Directory
-            </h2>
-            <div id="directory-container"></div>
-        </body>
-
-        <footer>
-            <div class="top-footer">
-              <img class="footer-logo" src="./images/StGCC.png" alt="STGCC Logo">
-              <p>St. George Chamber of Commerce <br> North 200 East, St. George UT 84790</p>
-              <p>info@stgeorgechamber.com <br> 
-                +(435)435-4354 <br> 
+        <div class="contact-container">
+            <form id="contact-form">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+      
+              <input type="submit" value="Submit">
+            </form>
+      
+            <div class="contact-info">
+              <h1>Contact Information</h1>
+              <h2>
+                St. George Chamber of Commerce <br>
+                North 200 East, St. George UT 84790 <br>
+                Email: info@stgeorgechamber.com <br>
+                Phone: +(435)435-4354 <br>
+                Location Map: <br>
                 <iframe
                     width="80%"
-                    height="200"
+                    height="250"
                     frameborder="0"
                     style="border:0"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102351.84533672507!2d-113.61052193046313!3d37.09652709736924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca571c1a854007%3A0x4e8db63384b18ec5!2sSt%20George%2C%20UT%2084790%2C%20USA!5e0!3m2!1sen!2sus!4v1625069905487!5m2!1sen!2sus"
                     allowfullscreen
                 ></iframe>
-              </p>>
+              </h2>
+            </div>
+        </div>
+
+        <footer>
+            <div class="top-footer">
+                <img class="footer-logo" src="./images/StGCC.png" alt="STGCC Logo">
+                <p>St. George Chamber of Commerce <br> North 200 East, St. George UT 84790</p>
+                <p>info@stgeorgechamber.com <br> 
+                    +(435)435-4354 <br> 
+                    <iframe
+                        width="80%"
+                        height="200"
+                        frameborder="0"
+                        style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102351.84533672507!2d-113.61052193046313!3d37.09652709736924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca571c1a854007%3A0x4e8db63384b18ec5!2sSt%20George%2C%20UT%2084790%2C%20USA!5e0!3m2!1sen!2sus!4v1625069905487!5m2!1sen!2sus"
+                        allowfullscreen
+                    ></iframe>
+                </p>
             </div>
             <hr>
             <p>&copy; 2023 St. George Chamber | Garrett E. Cooper | WDD 230 Project</p>
@@ -97,4 +124,4 @@
         </footer>
         <script src="scripts/script.js"></script>
     </body>
-</html>
+    </html>

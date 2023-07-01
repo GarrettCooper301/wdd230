@@ -373,5 +373,83 @@ footer .top-footer {
     color: rgb(217, 255, 0);
   }
 
+  /* ... (existing code) ... */
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(0, 10, 54);
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(182, 182, 182);
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .contact-container form {
+    flex: 1 1 300px;
+    margin-right: 20px;
+  }
+  
+  .contact-container .contact-info {
+    flex: 1 1 300px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 5%;
+    padding: 20px;
+    color: white;
+  }
+  
+  .contact-container .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container .contact-info a {
+    color: yellow;
+  }
+  
+  /* ... (existing code) ... */
+  
 
 
