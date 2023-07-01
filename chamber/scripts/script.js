@@ -106,7 +106,3 @@ function submitForm(event) {
   document.getElementById('contactForm').reset();
 }
 
-
-
-
-
