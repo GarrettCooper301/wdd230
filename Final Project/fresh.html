@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fresh</title>
+        <meta name="description" content="Bountiful Foods Final Project for WDD 230 at Brigham Young University Idaho.  By Garrett Cooper.">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/small.css">
+        
+    </head>
+    <body>
+        <header>
+          <div id="banner"></div>
+          <!--First header row for logo and nav bar-->
+          <div class="header_container">
+            <section id="left-side">
+              <h1>
+                Bountiful Foods
+              </h1>
+            </section>  
+            
+            <section id="middle">
+              <nav>
+                <div id="menu-toggle">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                <div id="navigation-links">
+                  <a href="./index.html">Home</a>
+                  <a href="./fresh.html">Fresh</a>
+                  <a href="./about.html">About Us</a>
+                </div>
+              </nav>
+            </section>
+            
+              <section id="right-side">
+                <div class="social">
+                  <a href="https://instagram.com" target ="_blank">
+                      <img src="images/instagram.png" alt="instagram logo">
+                  </a>
+                  <a href="https://facebook.com" target ="_blank">
+                    <img src="images/facebook.png" alt="instagram logo">
+                  </a>
+                  <a href="https://twitter.com" target ="_blank">
+                    <img src="images/twitter.png" alt="twitter logo">
+                  </a>
+                </div>
+              </section>
+          </div>
+
+        </header>
+
+        <main>
+            <h1>Build Your Own Specialty Drink</h1>
+            <form id="drink-form">
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+        
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" required>
+        
+              <label for="fruit1">Select Fruit 1:</label>
+              <select id="fruit1" required></select>
+        
+              <label for="fruit2">Select Fruit 2:</label>
+              <select id="fruit2" required></select>
+        
+              <label for="fruit3">Select Fruit 3:</label>
+              <select id="fruit3" required></select>
+        
+              <label for="special-instructions">Special Instructions:</label>
+              <textarea id="special-instructions"></textarea>
+        
+              <button type="submit">Submit</button>
+            </form>
+        
+            <div id="output"></div>
+          </main>
+  
+
+        <footer>
+            <p>&copy; 2023 Bountiful Foods | Garrett E. Cooper | WDD 230 Project</p>
+            <p>Last Modified:</p><span id="last-modified"></span>
+            <p>Data Source:</p>
+            <a href="https://brotherblazzard.github.io/canvas-content/fruit.json" target="_blank">Fruit JSON Data</a>
+        </footer>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/weather.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <meta name="description" content="Bountiful Foods Final Project for WDD 230 at Brigham Young University Idaho.  By Garrett Cooper.">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/small.css">
+        
+    </head>
+    <body>
+        <header>
+          <div id="banner"></div>
+          <!--First header row for logo and nav bar-->
+          <div class="header_container">
+            <section id="left-side">
+              <h1>
+                Bountiful Foods
+              </h1>
+            </section>  
+            
+            <section id="middle">
+              <nav>
+                <div id="menu-toggle">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                <div id="navigation-links">
+                  <a href="./index.html">Home</a>
+                  <a href="./fresh.html">Fresh</a>
+                  <a href="./about.html">About Us</a>
+                </div>
+              </nav>
+            </section>
+            
+              <section id="right-side">
+                <div class="social">
+                  <a href="https://instagram.com" target ="_blank">
+                      <img src="images/instagram.png" alt="instagram logo">
+                  </a>
+                  <a href="https://facebook.com" target ="_blank">
+                    <img src="images/facebook.png" alt="instagram logo">
+                  </a>
+                  <a href="https://twitter.com" target ="_blank">
+                    <img src="images/twitter.png" alt="twitter logo">
+                  </a>
+                </div>
+              </section>
+          </div>
+
+        </header>
+
+          <div class="wrapper">
+
+            <section id="hero">
+              <div class="hero-img">
+                <h1>Welcome to Bountiful Foods</h1>
+                  <button onclick="location.href='about.html'">About Us</button> 
+              </div>
+            </section>
+
+            <section id="summary">
+              <div class="summary-content">
+                <p>
+                  Bountiful Foods is small business specializing in organic, locally grown foods. 
+                  We are physically located in Carlsbad, California, however, we have many 
+                  food trucks that cover the coastal area from Los Angeles to San Diego. 
+                  Our company sells fruits and produce directly from the farmers in the 
+                  area, but also we also work with some national and international suppliers.
+                </p>
+              </div>
+            </section>
+
+            <section id="weather">
+              <div class="weather-content">
+                <img src="" alt="Weather Image" id="weather-icon">
+                <p id="current-condition"></p>
+                <p>Temperature: <span id="current-temperature"></span></p>
+                <p>Condition: <span id="condition-description"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>3 Day Forcast: <span id="forecast"></span></p>
+                <p>Provided By: <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+              </div>
+            </section>
+            
+            <section id="fresh">
+              <div class="fresh-link">
+                <p> 
+                  Build your own specialty drink from our very own Fresh Page! 
+                </p>
+                <button onclick="location.href='fresh.html'">Build Here!</button> 
+              </div>
+            </section>
+
+            <section id="contact"> Contact Us!
+              <div class="contact-content">
+                <ul>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Email: info@bountifulfoods.com</li>
+                    <li>Address: 123 Main Street, Carlsbad, CA 12345</li>
+                    <iframe
+                        width="90%"
+                        height="300"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13469.67196868926!2d-117.35092055000002!3d33.15979325000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbff4deed6057f%3A0x20d9c1e9e1ac2d82!2sMain%20St%2C%20Carlsbad%2C%20CA%2092020%2C%20USA!5e0!3m2!1sen!2s!4v1626301992015!5m2!1sen!2s"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </ul>
+              </div>
+            </section>
+
+            <section id="information"> 
+                <div class="information-content">
+                    <h1>Drinks You Have Ordered!</h1>
+                    <div id="drink-count-card"></div>
+                </div>
+            </section>
+               
+
+          </div>
+    <footer>
+        <p>&copy; 2023 Bountiful Foods | Garrett E. Cooper | WDD 230 Project</p>
+        <p>Last Modified:</p><span id="last-modified"></span>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
